@@ -193,3 +193,35 @@ button:hover {
   50% { transform: scale(0.9) rotate(-2deg); }
   100% { transform: scale(1); }
 }
+
+/* 💓 Heartbeat */
+.heartbeat {
+  animation: heartbeat 1.4s infinite;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.05); }
+  40% { transform: scale(1); }
+  60% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* ⚡ Glitch Screen */
+.glitch {
+  animation: glitchFlash 0.15s infinite;
+  background: black;
+}
+
+@keyframes glitchFlash {
+  0% { background: black; color: white; }
+  50% { background: #ff758c; }
+  100% { background: black; }
+}
+
+/* ✍️ Typewriter */
+.typewriter {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  min-height: 1.5em;
+}
