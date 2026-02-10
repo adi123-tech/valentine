@@ -162,3 +162,34 @@ button:hover {
     opacity: 1;
   }
 }
+
+/* 😈 NO Button Self-Destruct Effects */
+
+.shake {
+  animation: shake 0.4s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.crack {
+  animation: crack 0.6s;
+  background: repeating-linear-gradient(
+    45deg,
+    #f44336,
+    #f44336 10px,
+    #000 10px,
+    #000 20px
+  );
+}
+
+@keyframes crack {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.9) rotate(-2deg); }
+  100% { transform: scale(1); }
+}
